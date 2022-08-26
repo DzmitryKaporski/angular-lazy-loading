@@ -1,0 +1,8 @@
+<main>
+  <ul class="list" *ngFor="let project of projectsList">
+    <li class={{project.class}}>
+      <img title={{project.title}} src={{project.src}} alt="img">
+      <span>{{project.text}}</span>
+    </li>
+  </ul>
+</main>
