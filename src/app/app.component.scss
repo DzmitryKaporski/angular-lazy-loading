@@ -28,12 +28,14 @@
 }
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   padding: 0 15px 0 15px;
   box-shadow: 0 0 20px 10px rgba(175, 176, 167, 0.288);
 
   @media(max-width: 1210px) {
     & {
+      min-height: auto;
       height: auto;
       display: flex;
       justify-content: space-around;
