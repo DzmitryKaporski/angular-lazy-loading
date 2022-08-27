@@ -2,5 +2,22 @@
   margin: 20rem 5rem 5rem 5rem;
   font-size: 5vh;
   text-align: center;
-  color: rgba(81, 82, 76, 0.714);
+
+  @media(max-width: 1210px) {
+
+    &,
+    h1 {
+      width: 100vw;
+      margin: 10rem 0 0 0;
+      font-size: 3vh;
+    }
+  }
+
+  @media(max-width: 495px) {
+
+    &,
+    h1 {
+      font-size: 2vh;
+    }
+  }
 }
