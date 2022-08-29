@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lazy-loading';
+  isDarkBackground: boolean = false;
+
+  toggleDarkTheme() {
+    const htmlDocument = document.documentElement;
+    htmlDocument.classList.toggle("dark-theme");
+    this.isDarkBackground = !this.isDarkBackground;
+  }
 }

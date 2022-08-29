@@ -19,7 +19,7 @@
     font-size: 25px;
     text-align: center;
 
-    @media(max-width: 495px) {
+    @media(max-width: 650px) {
       & {
         font-size: 15px;
       }
@@ -28,6 +28,9 @@
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   min-height: 100vh;
   height: auto;
   padding: 0 15px 0 15px;
@@ -37,8 +40,7 @@
     & {
       min-height: auto;
       height: auto;
-      display: flex;
-      justify-content: space-around;
+      flex-direction: row;
     }
   }
 
@@ -64,7 +66,7 @@
         }
       }
 
-      @media(max-width: 495px) {
+      @media(max-width: 650px) {
         & {
           font-size: 15px;
         }
@@ -75,7 +77,6 @@
       & {
         margin: 0;
         display: flex;
-
         font-size: 15px;
         list-style: none;
       }
@@ -90,6 +91,47 @@
     &:hover {
       cursor: pointer;
       color: rgba(197, 108, 12, 0.452);
+    }
+  }
+}
+
+.wrap-button-toggle-theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .button-toggle-theme {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.479);
+    transition: 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: black;
+      box-shadow: 0 0 20px 1px rgb(0, 0, 0);
+    }
+
+    @media(max-width: 450px) {
+      & {
+        margin-left: 20px;
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+
+  .button-background {
+    background-color: black;
+    box-shadow: 0 0 20px 0 white;
+
+    &:hover {
+      cursor: pointer;
+      background-color: white;
+      box-shadow: 0 0 20px 1px white;
     }
   }
 }
