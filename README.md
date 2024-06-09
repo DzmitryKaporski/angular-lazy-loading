@@ -1,6 +1,6 @@
 # deploy: [angular-lazy-loading](https://angular17-lazy-loading.surge.sh/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.3
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3
 
 ## Development server
 
